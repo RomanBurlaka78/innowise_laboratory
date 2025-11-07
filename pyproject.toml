@@ -1,0 +1,12 @@
+[project]
+name = "innowise_laboratory"
+version = "0.1.0"
+description = "Simple Python project using colorama"
+authors = [
+    { name = "Roman"}
+]
+
+dependencies = [
+    "colorama==0.4.6"
+]
+requires-python = ">=3.8"
