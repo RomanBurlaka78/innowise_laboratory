@@ -6,7 +6,6 @@ from .schemas import BookResponse, BookUpdate, BookCreate
 from .dependencies import SessionDep
 
 router = APIRouter(
-    prefix="/books",
     tags=["Books"]
 )
 
@@ -110,7 +109,3 @@ async def search_books(
         )
 
     return results
-
-@router.get("/healthcheck", status_code= status.HTTP_200_OK)
-async  def healthcheck():
-    return {"status": "ok"}
